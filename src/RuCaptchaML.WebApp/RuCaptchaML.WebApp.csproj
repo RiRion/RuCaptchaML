@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="6.5.0" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.ML" Version="2.0.0" />
+        <PackageReference Include="Microsoft.ML" Version="2.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RuCaptcha.Predict\RuCaptcha.Predict.csproj" />
+      <ProjectReference Include="..\RuCaptchaML.Shared\RuCaptchaML.Shared.csproj" />
+      <ProjectReference Include="..\RuCaptchaML.Train\RuCaptchaML.Train.csproj" />
+    </ItemGroup>
+
+</Project>
