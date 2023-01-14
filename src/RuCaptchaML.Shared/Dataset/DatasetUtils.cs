@@ -21,7 +21,14 @@ public static class DatasetUtils
 
         foreach (var file in files)
         {
-            if (!ParseImageForDatasetProcessing(file, outputDatasetPath)) rawImages++;
+            try
+            {
+                if (!ParseImageForDatasetProcessing(file, outputDatasetPath)) rawImages++;
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
 
         Console.WriteLine($"Обработано изображений {files.Count - rawImages} из {files.Count}");
@@ -110,7 +117,7 @@ public static class DatasetUtils
     private static Mat BringToFormat(Mat sourceImage)
     {
         // добавление бордера
-        Cv2.CopyMakeBorder(sourceImage, sourceImage, 8, 8, 8, 8, BorderTypes.Replicate);
+        Cv2.CopyMakeBorder(sourceImage, sourceImage, 8, 8, 8, 8, BorderTypes.Default);
 
         // Преобразование в черно-белый цвет и какая то магия связанная с типами, без последнего не определяет границы контура
         Cv2.Threshold(sourceImage, sourceImage, 0, 255, ThresholdTypes.BinaryInv | ThresholdTypes.Otsu);

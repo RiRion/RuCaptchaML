@@ -27,11 +27,11 @@ builder.Services.AddPredictionEnginePool<InMemoryImageData, ImagePrediction>()
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
+if (app.Environment.IsDevelopment())
+{
     app.UseSwagger();
     app.UseSwaggerUI();
-// }
+}
 
 app.UseHttpsRedirection();
 
@@ -44,8 +44,6 @@ app.Run();
 void ConfigureContainer(ContainerBuilder builder, IConfiguration configuration)
 {
     builder.RegisterClientConfigurations(configuration, Collector.GetAssembly("RuCaptchaML.Shared"));
-
-    builder.RegisterInstance(new MLContext(seed:1)).SingleInstance();
 
     builder
         .RegisterAssemblyTypes(Collector.GetAssembly("RuCaptcha.Predict"))
