@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>RuCaptchaML.Predict</id>
+    <!-- <version>$version$</version> -->
+    <version>1.0.1</version>
+    <authors>Anton Mikulchik</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/DSpaceNN/RuCaptchaML</projectUrl>
+    <description>RuCaptchaML library for recognition captcha.</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags></tags>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.Extensions.ML" version="2.0.0" />
+        <dependency id="Microsoft.ML" version="2.0.0" />
+        <dependency id="Microsoft.ML.ImageAnalytics" version="2.0.0" />
+        <dependency id="Microsoft.ML.Vision" version="2.0.0" />
+        <dependency id="SciSharp.TensorFlow.Redist" version="2.3.1" />
+        <dependency id="Autofac" version="6.5.0" />
+        <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="7.0.1" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="7.0.0" />
+        <dependency id="Microsoft.Extensions.DependencyModel" version="7.0.0" />
+        <dependency id="Microsoft.ML" version="2.0.0" />
+        <dependency id="OpenCvSharp4" version="4.6.0.20220608" />
+        <dependency id="OpenCvSharp4.runtime.osx.10.15-x64" version="4.6.0.20220608" />
+        <dependency id="OpenCvSharp4.runtime.win" version="4.6.0.20220608" />
+        <dependency id="OpenCvSharp4Extern" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+        <!-- Add files from an arbitrary folder that's not necessarily in the project -->
+        <!-- <file src="..\BuildNugetPackage\BuildNugetPackage\bin\Release\**\*.*" target="TargetNugetPackage\bin" /> -->
+        <file src="..\RuCaptchaML\src\RuCaptcha.Predict\bin\Debug\**\*.*" target="lib" />
+        <!-- file src="..\RuCaptchaML\src\RuCaptchaML.Shared\bin\Debug\**\*.*" target="TargetNugetPackage\bin" /> -->
+  </files>
+</package>
