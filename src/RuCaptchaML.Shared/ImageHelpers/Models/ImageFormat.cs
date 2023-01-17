@@ -7,5 +7,6 @@ public enum ImageFormat
     gif,
     tiff,
     png,
+    jfif,
     unknown
 }

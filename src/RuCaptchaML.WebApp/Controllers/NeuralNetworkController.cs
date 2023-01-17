@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
 using RuCaptcha.Predict.Services.ML;
 using RuCaptchaML.Shared.ImageHelpers;
@@ -23,13 +24,12 @@ public class NeuralNetworkController : ControllerBase
     [ProducesResponseType(StatusCodes.Status415UnsupportedMediaType)]
     public ActionResult<string> Predict(IFormFile imageFile)
     {
-        if (imageFile.Length == 0)
-            return BadRequest();
+        if (imageFile.Length == 0) return BadRequest();
 
         var imageData = GetByteArrayFromIFormFile(imageFile);
         if (!imageData.IsValidImage())
             return StatusCode(StatusCodes.Status415UnsupportedMediaType);
-
+        
         try
         {
             return _neuralNetworkPredictService.Predict(imageData);

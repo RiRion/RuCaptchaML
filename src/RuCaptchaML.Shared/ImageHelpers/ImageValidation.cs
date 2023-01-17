@@ -8,8 +8,7 @@ namespace RuCaptchaML.Shared.ImageHelpers
         public static bool IsValidImage(this byte[] image)
         {
             var imageFormat = GetImageFormat(image);
-            return imageFormat == ImageFormat.jpeg ||
-                   imageFormat == ImageFormat.png;
+            return imageFormat is ImageFormat.jpeg or ImageFormat.png;
         }
 
         public static ImageFormat GetImageFormat(byte[] bytes)
