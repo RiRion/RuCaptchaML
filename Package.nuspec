@@ -3,7 +3,7 @@
   <metadata>
     <id>RuCaptchaML.Predict</id>
     <!-- <version>$version$</version> -->
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Anton Mikulchik</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -30,6 +30,7 @@
         <dependency id="OpenCvSharp4.runtime.osx.10.15-x64" version="4.6.0.20220608" />
         <dependency id="OpenCvSharp4.runtime.win" version="4.6.0.20220608" />
         <dependency id="OpenCvSharp4Extern" version="1.0.0" />
+		<dependency id="OpenCvSharp4_.runtime.ubuntu.20.04-x64" version="4.7.0.20230115" />
       </group>
     </dependencies>
   </metadata>
