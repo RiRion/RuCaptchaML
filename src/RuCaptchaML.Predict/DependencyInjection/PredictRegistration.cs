@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.ML;
-using RuCaptcha.Predict.Services.ML;
+using RuCaptchaML.Predict.Services.ML;
 using RuCaptchaML.Shared.Models;
 
-namespace RuCaptcha.Predict.DependencyInjection;
+namespace RuCaptchaML.Predict.DependencyInjection;
 
 public static class PredictRegistration
 {

@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuCaptchaML.Shared", "src/R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuCaptchaML.WebApp", "src/RuCaptchaML.WebApp\RuCaptchaML.WebApp.csproj", "{08B1AD9E-52B5-4AB7-93DB-F4A3E5932EBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuCaptcha.Predict", "src/RuCaptcha.Predict\RuCaptcha.Predict.csproj", "{03B5B9EE-6A81-4B88-9AF1-85D261708F5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuCaptchaML.Predict", "src\RuCaptchaML.Predict\RuCaptchaML.Predict.csproj", "{03B5B9EE-6A81-4B88-9AF1-85D261708F5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{186256AF-DE88-42F9-8CC1-EAB3E1F25143}"
 EndProject

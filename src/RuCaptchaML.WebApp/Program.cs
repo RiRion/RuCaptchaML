@@ -46,7 +46,7 @@ void ConfigureContainer(ContainerBuilder builder, IConfiguration configuration)
     builder.RegisterClientConfigurations(configuration, Collector.GetAssembly("RuCaptchaML.Shared"));
 
     builder
-        .RegisterAssemblyTypes(Collector.GetAssembly("RuCaptcha.Predict"))
+        .RegisterAssemblyTypes(Collector.GetAssembly("RuCaptchaML.Predict"))
         .Where(p => p.Name.EndsWith("Service") || p.IsClass)
         .AsImplementedInterfaces();
 }

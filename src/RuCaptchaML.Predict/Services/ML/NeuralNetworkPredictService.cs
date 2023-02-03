@@ -3,7 +3,7 @@ using Microsoft.ML;
 using RuCaptchaML.Shared.Dataset;
 using RuCaptchaML.Shared.Models;
 
-namespace RuCaptcha.Predict.Services.ML;
+namespace RuCaptchaML.Predict.Services.ML;
 
 public class NeuralNetworkPredictService : INeuralNetworkPredictService
 {

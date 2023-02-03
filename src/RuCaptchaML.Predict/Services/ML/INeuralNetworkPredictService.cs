@@ -1,4 +1,4 @@
-namespace RuCaptcha.Predict.Services.ML;
+namespace RuCaptchaML.Predict.Services.ML;
 
 public interface INeuralNetworkPredictService
 {

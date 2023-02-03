@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
-using RuCaptcha.Predict.Services.ML;
+using RuCaptchaML.Predict.Services.ML;
 using RuCaptchaML.Shared.ImageHelpers;
 
 namespace RuCaptchaML.WebApp.Controllers;

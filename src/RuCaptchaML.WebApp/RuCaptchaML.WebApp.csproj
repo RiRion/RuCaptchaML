@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\RuCaptcha.Predict\RuCaptcha.Predict.csproj" />
+      <ProjectReference Include="..\RuCaptchaML.Predict\RuCaptchaML.Predict.csproj" />
       <ProjectReference Include="..\RuCaptchaML.Shared\RuCaptchaML.Shared.csproj" />
       <ProjectReference Include="..\RuCaptchaML.Train\RuCaptchaML.Train.csproj" />
     </ItemGroup>
