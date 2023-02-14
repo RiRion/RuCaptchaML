@@ -27,7 +27,7 @@ public static class DatasetUtils
             }
             catch (Exception ex)
             {
-                
+                // TODO: если буква стоит у границы изображения неправильно устанавливаются отступы
             }
         }
 
@@ -191,7 +191,7 @@ public static class DatasetUtils
     }
 
     /// <summary>
-    /// Отображает полученне изображение в новом окне.
+    /// Отображает полученное изображение в новом окне.
     /// </summary>
     /// <param name="name">название окна.</param>
     /// <param name="img">изображение, представленное типом <see cref="Mat"/>.</param>
