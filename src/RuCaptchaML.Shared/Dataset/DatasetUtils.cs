@@ -119,7 +119,7 @@ public static class DatasetUtils
         // добавление бордера
         Cv2.CopyMakeBorder(sourceImage, sourceImage, 8, 8, 8, 8, BorderTypes.Default);
 
-        // Преобразование в черно-белый цвет и какая то магия связанная с типами, без последнего не определяет границы контура
+        // Преобразование в черно-белый цвет
         Cv2.Threshold(sourceImage, sourceImage, 0, 255, ThresholdTypes.BinaryInv | ThresholdTypes.Otsu);
 
         return sourceImage;
